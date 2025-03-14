@@ -119,7 +119,7 @@ class ResNet_v2(nn.Module):
 
 
 def Resnet_Leaky():
-    return ResNet_v2(Bottleneck_v2, [2,4,6,2], [1,1,1,1],
+    return ResNet_v2(Bottleneck_v2, [2,4,6,2], [0,0,1,1],
                      [0,0,0,0], [0,0,0,0], expansion=4, init_channel=32)
 
 def Resnet_SE():
@@ -132,7 +132,7 @@ def Resnet_G():
 
 def Resnet_Custom():
     return ResNet_v2(Bottleneck_v2, [2, 4, 5, 2], [0, 0, 1, 1],
-                     [0, 0, 1, 1], [0, 0, 0, 0], expansion=4, init_channel=32)
+                     [0, 0, 0, 1], [1, 1, 0, 0], expansion=4, init_channel=32)
 
 def test():
     net = Resnet_Custom()

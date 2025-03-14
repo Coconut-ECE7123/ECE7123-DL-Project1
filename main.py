@@ -32,7 +32,7 @@ w_decay = 5e-4 # range: 5e-4 ~ 1e-3; overfit -> 1e-3 , underfit -> 5e-4 / 0 ; 5e
 scheduler_type = 2
 # 0 -> MultiStep; 1 -> Exponential; 2 -> Cosine_Annealing; 3 -> Plateau; 4 -> Warmup
 
-mlflow.set_experiment("ResnetECA")
+mlflow.set_experiment("ResnetEnhanced")
 mlflow.pytorch.autolog(log_models=False)
 parser = argparse.ArgumentParser(description='ResnetECA')
 parser.add_argument('--lr', default=learning_rate, type=float, help='learning rate')

@@ -28,7 +28,8 @@ The final result is a modified ResNet with `4.9M` parameters that realize `95.49
 ### Main modifications done upon the original codes: <br>
 #### Model 
 1. halved the channel width for tensors in 4 layers
-2. 
+2. block numbers for 4 layers: [2, 4, 6, 2]
+3. introduced SE attention for 
 ## Exp. Env.
 All the experiments in this project were done on a remote server platform `AutoDL`.   
 

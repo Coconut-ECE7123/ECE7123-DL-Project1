@@ -27,9 +27,14 @@ This project is built based on an open-source github project https://github.com/
 The final result is a modified ResNet with `4.9M` parameters that realize `95.49%` accuracy on CIFAR-10 and `85.10%` accuracy on Kaggle test set. <br>
 ### Main modifications done upon the original codes: <br>
 #### Model 
-1. halved the channel width for tensors in 4 layers
-2. block numbers for 4 layers: [2, 4, 6, 2]
-3. introduced SE attention for 
+1. replaced Residual Block by Bottleneck Block
+2. halved the channel width for tensors in 4 layers
+3. block numbers for 4 layers: [2, 4, 6, 2]
+4. introduced SE attention into Bottleneck Block
+#### Training 
+1. data augmentation
+2. MLFlow for monitoring
+3. early stopping (patience=30)
 ## Exp. Env.
 All the experiments in this project were done on a remote server platform `AutoDL`.   
 

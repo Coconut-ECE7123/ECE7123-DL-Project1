@@ -38,7 +38,7 @@ The final result is a modified ResNet with `4.9M` parameters that realize `95.49
 3. early stopping (patience=30)
 4. label smoothing(factor=0.01)
 ## Exp. Env.
-All the experiments in this project were done on a remote server platform `AutoDL`.  <br>
+All the experiments in this project were done on a remote Linux server platform `AutoDL`.  <br>
 |`GPU`|`Cuda`|`Python`|`PyTorch`|`Pretrained`|`Label Smoothing`|`Batch Size`|`Worker`|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |RTX3090 | 12.1 | 3.12.3 | 2.3.0|False|0.01|128|16|

@@ -89,7 +89,7 @@ print('==> Building model..')
 
 #  FAST MARK -==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-============-=-=-=-=-=-=-=-=-=-
 
-net = Resnet_ECA()
+net = Resnet_Custom()
 summary(net, input_size=(1, 3, 32, 32))
 net = net.to(device)
 if device == 'cuda':

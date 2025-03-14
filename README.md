@@ -25,6 +25,7 @@
 
 This project is built based on an open-source github project https://github.com/kuangliu/pytorch-cifar . <br> 
 The final result is a modified ResNet with `4.9M` parameters that realize `95.49%` accuracy on CIFAR-10 and `85.10%` accuracy on Kaggle test set. <br>
+[Model Structure](https://github.com/Coconut-ECE7123/ECE7123-DL-Project1/blob/main/model%20structure.png)
 ### Main modifications done upon the original codes: <br>
 #### Model 
 1. replaced Residual Block by Bottleneck Block
